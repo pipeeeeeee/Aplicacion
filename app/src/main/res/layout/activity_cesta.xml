@@ -7,4 +7,116 @@
     android:layout_height="match_parent"
     tools:context=".Cesta">
 
+    <TextView
+        android:id="@+id/tvVJenVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Videojuegos en venta"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVJenVenta"
+        app:srcCompat="@drawable/vjuego1" />
+
+    <TextView
+        android:id="@+id/tvTituloZelda"
+        android:layout_width="178dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="32dp"
+        android:text="The Legend of Zelda: Tears of the Kingdom"
+        android:textColor="#120D0D"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tvDesZelda"
+        android:layout_width="176dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:text="Explora los cielos y las tierras de Hyrule en una aventura épica de mundo abierto."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvTituloZelda"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloZelda" />
+
+    <Button
+        android:id="@+id/btnComprarZelda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="COMPRAR"
+        app:layout_constraintEnd_toEndOf="@+id/tvTituloZelda"
+        app:layout_constraintTop_toBottomOf="@+id/tvDesZelda" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/vjuego2"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/tvTituloCOD"
+        android:layout_width="173dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="32dp"
+        android:text="Call of Duty: Modern Warfare III"
+        android:textColor="#140B0B"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tvDesCOD"
+        android:layout_width="174dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Acción táctica en primera persona con modos multijugador y campaña cinematográfica."
+        app:layout_constraintStart_toStartOf="@+id/tvTituloCOD"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloCOD" />
+
+    <Button
+        android:id="@+id/btnComprarCOD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="COMPRAR"
+        app:layout_constraintEnd_toEndOf="@+id/tvTituloCOD"
+        app:layout_constraintTop_toBottomOf="@+id/tvDesCOD" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/vjuego3"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="173dp"
+        android:layout_height="52dp"
+        android:text="TextView"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="553dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
