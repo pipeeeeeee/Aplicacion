@@ -18,6 +18,9 @@
             android:name=".Comprar"
             android:exported="false" />
         <activity
+            android:name=".Pago"
+            android:exported="false" />
+        <activity
             android:name=".confirmar"
             android:exported="false" />
         <activity

@@ -27,4 +27,10 @@ public class Menu extends AppCompatActivity {
         Intent lanzadorVender=new Intent(this, Vender.class);
         startActivity(lanzadorVender);
     }
+
+    public void lanzarComprar(View view){
+        Intent lanzadorComprar = new Intent(this, Comprar.class);
+        startActivity(lanzadorComprar);
+    }
+
 }

@@ -9,42 +9,27 @@
 
 
     <TextView
-        android:id="@+id/tvTituloCOD2"
-        android:layout_width="210dp"
-        android:layout_height="47dp"
-        android:layout_marginEnd="28dp"
-        android:text="Super Mario Bros. Wonder"
-        android:textColor="#140B0B"
-        android:textSize="17dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="496dp" />
+        android:id="@+id/tvDesCOD2"
+        android:layout_width="157dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Total: 179,97 €"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
-        android:id="@+id/btnComprarCOD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Eliminar "
-        tools:backgroundTint="#FA0000"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="566dp" />
-
-    <TextView
-        android:id="@+id/tvDesCOD3"
-        android:layout_width="146dp"
-        android:layout_height="23dp"
-        android:text="Precio59,99 €"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="543dp" />
-
-    <Button
-        android:id="@+id/btnComprarZelda2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#EF0707"
-        android:text="Eliminar "
-        app:layout_constraintStart_toStartOf="@+id/tvDesZelda"
-        tools:layout_editor_absoluteY="216dp" />
+        android:id="@+id/btnComprarCOD2"
+        android:layout_width="124dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="64dp"
+        android:onClick="realizarPago"
+        android:backgroundTint="#5F0BED"
+        android:text="Pagar"
+        app:layout_constraintStart_toEndOf="@+id/tvDesCOD2"
+        app:layout_constraintTop_toTopOf="@+id/tvDesCOD2"
+     />
 
     <TextView
         android:id="@+id/tvVJenVenta"
@@ -59,55 +44,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvVJenVenta"
-        app:srcCompat="@drawable/vjuego1" />
-
     <TextView
         android:id="@+id/tvTituloZelda"
-        android:layout_width="210dp"
-        android:layout_height="47dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="222dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="16dp"
         android:text="The Legend of Zelda: Tears of the Kingdom"
         android:textColor="#120D0D"
-        android:textSize="17sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/tvDesZelda"
-        android:layout_width="127dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="4dp"
-        android:text="Precio 69,99 €"
-        app:layout_constraintStart_toStartOf="@+id/tvTituloZelda"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloZelda" />
-
-    <Button
-        android:id="@+id/btnComprarZelda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#FA0000"
-        android:text="Eliminar "
-        app:layout_constraintStart_toStartOf="@+id/tvDesZelda"
-        tools:layout_editor_absoluteY="216dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/vjuego2" />
+        android:id="@+id/tvTituloCOD2"
+        android:layout_width="210dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="32dp"
+        android:text="Super Mario Bros. Wonder"
+        android:textColor="#140B0B"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/tvTituloCOD"
@@ -122,22 +81,42 @@
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <TextView
+        android:id="@+id/tvDesCOD3"
+        android:layout_width="146dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="4dp"
+        android:text="Precio 49,99 €"
+        app:layout_constraintStart_toStartOf="@+id/tvTituloCOD2"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloCOD2" />
+
+    <TextView
         android:id="@+id/tvDesCOD"
         android:layout_width="106dp"
         android:layout_height="26dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:text="Precio 59,99 €"
         app:layout_constraintStart_toStartOf="@+id/tvTituloCOD"
         app:layout_constraintTop_toBottomOf="@+id/tvTituloCOD" />
 
     <Button
-        android:id="@+id/btnComprarCOD"
+        android:id="@+id/btnComprarZelda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#FA0000"
         android:text="Eliminar "
-        app:layout_constraintStart_toStartOf="@+id/tvDesCOD"
-        tools:backgroundTint="#FA0000"
-        tools:layout_editor_absoluteY="403dp" />
+        app:layout_constraintStart_toStartOf="@+id/tvDesZelda"
+        app:layout_constraintTop_toBottomOf="@+id/tvDesZelda" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/vjuego2" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -148,6 +127,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/vjuego3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVJenVenta"
+        app:srcCompat="@drawable/vjuego1" />
+
+    <Button
+        android:id="@+id/btnComprarCOD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#FA0000"
+        android:text="Eliminar "
+        app:layout_constraintStart_toStartOf="@+id/tvDesCOD3"
+        app:layout_constraintTop_toBottomOf="@+id/tvDesCOD3"
+        />
+
+    <TextView
+        android:id="@+id/tvDesZelda"
+        android:layout_width="127dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:text="Precio 69,99 €"
+        app:layout_constraintStart_toStartOf="@+id/tvTituloZelda"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloZelda" />
+
+    <Button
+        android:id="@+id/btnComprarCOD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#FA0000"
+        android:text="Eliminar "
+        app:layout_constraintStart_toStartOf="@+id/tvDesCOD"
+        app:layout_constraintTop_toBottomOf="@+id/tvDesCOD"
+       />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
