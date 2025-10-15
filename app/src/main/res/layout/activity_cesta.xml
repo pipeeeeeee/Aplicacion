@@ -146,7 +146,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="TextView"
+        android:text="Precio 69,99 €"
         app:layout_constraintStart_toStartOf="@+id/CestasTituloZelda"
         app:layout_constraintTop_toBottomOf="@+id/CestasTituloZelda" />
 
@@ -155,7 +155,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="TextView"
+        android:text="Precio 59,99 €"
         app:layout_constraintStart_toStartOf="@+id/CODtextocesta"
         app:layout_constraintTop_toBottomOf="@+id/CODtextocesta" />
 
@@ -164,7 +164,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="TextView"
+        android:text="Precio 49,99 €"
         app:layout_constraintStart_toStartOf="@+id/CestaTituloMariotext"
         app:layout_constraintTop_toBottomOf="@+id/CestaTituloMariotext" />
 
