@@ -53,7 +53,7 @@
         android:id="@+id/tvVender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="70dp"
         android:text="VENDER"
         android:textColor="#040101"
         android:textSize="24sp"

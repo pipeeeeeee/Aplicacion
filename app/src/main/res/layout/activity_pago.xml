@@ -8,7 +8,7 @@
     tools:context=".Pago">
 
     <TextView
-        android:id="@+id/tvTitulo"
+        android:id="@+id/tvRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -30,15 +30,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+        app:layout_constraintTop_toBottomOf="@+id/tvRegistro" />
 
 
     <Button
         android:id="@+id/btnVolverInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Volver al Inicio"
         android:layout_marginTop="32dp"
+        android:onClick="lanzarInicio"
+        android:text="Volver al Inicio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvConfirmacion" />

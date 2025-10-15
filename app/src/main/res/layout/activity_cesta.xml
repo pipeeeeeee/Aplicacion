@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/tvDesCOD2"
+        android:id="@+id/tvPrecioTotal"
         android:layout_width="157dp"
         android:layout_height="35dp"
         android:layout_marginStart="32dp"
@@ -20,27 +20,27 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
-        android:id="@+id/btnComprarCOD2"
+        android:id="@+id/btnPagar"
         android:layout_width="124dp"
         android:layout_height="46dp"
         android:layout_marginStart="64dp"
+        android:backgroundTint="@color/blue"
         android:onClick="realizarPago"
-        android:backgroundTint="#5F0BED"
         android:text="Pagar"
-        app:layout_constraintStart_toEndOf="@+id/tvDesCOD2"
-        app:layout_constraintTop_toTopOf="@+id/tvDesCOD2"
-     />
+        app:layout_constraintStart_toEndOf="@+id/tvPrecioTotal"
+        app:layout_constraintTop_toTopOf="@+id/tvPrecioTotal" />
 
     <TextView
         android:id="@+id/tvVJenVenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="72dp"
         android:text="Cesta de la compra "
         android:textColor="#020202"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,7 +57,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/tvTituloCOD2"
+        android:id="@+id/tvTituloMarioBros"
         android:layout_width="210dp"
         android:layout_height="47dp"
         android:layout_marginEnd="32dp"
@@ -81,13 +81,13 @@
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <TextView
-        android:id="@+id/tvDesCOD3"
+        android:id="@+id/tvPrecioMario"
         android:layout_width="146dp"
         android:layout_height="23dp"
         android:layout_marginTop="4dp"
         android:text="Precio 49,99 €"
-        app:layout_constraintStart_toStartOf="@+id/tvTituloCOD2"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloCOD2" />
+        app:layout_constraintStart_toStartOf="@+id/tvTituloMarioBros"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloMarioBros" />
 
     <TextView
         android:id="@+id/tvDesCOD"
@@ -103,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:backgroundTint="#FA0000"
+        android:backgroundTint="@color/red"
         android:text="Eliminar "
         app:layout_constraintStart_toStartOf="@+id/tvDesZelda"
         app:layout_constraintTop_toBottomOf="@+id/tvDesZelda" />
@@ -133,7 +133,7 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvVJenVenta"
         app:srcCompat="@drawable/vjuego1" />
@@ -143,11 +143,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:backgroundTint="#FA0000"
+        android:backgroundTint="@color/red"
         android:text="Eliminar "
-        app:layout_constraintStart_toStartOf="@+id/tvDesCOD3"
-        app:layout_constraintTop_toBottomOf="@+id/tvDesCOD3"
-        />
+        app:layout_constraintStart_toStartOf="@+id/tvPrecioMario"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrecioMario" />
 
     <TextView
         android:id="@+id/tvDesZelda"
@@ -163,11 +162,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:backgroundTint="#FA0000"
+        android:backgroundTint="@color/red"
         android:text="Eliminar "
         app:layout_constraintStart_toStartOf="@+id/tvDesCOD"
-        app:layout_constraintTop_toBottomOf="@+id/tvDesCOD"
-       />
+        app:layout_constraintTop_toBottomOf="@+id/tvDesCOD" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

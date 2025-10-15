@@ -11,6 +11,7 @@
         android:id="@+id/tvCR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
         android:text="Confirmación de Registro"
         android:textColor="#0B0404"
         android:textSize="24sp"

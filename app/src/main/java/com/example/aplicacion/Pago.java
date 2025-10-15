@@ -1,6 +1,9 @@
 package com.example.aplicacion;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -19,5 +22,9 @@ public class Pago extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    public void lanzarInicio(View view){
+        Intent lanzadorInicio=new Intent(this, Menu.class);
+        startActivity(lanzadorInicio);
     }
 }
