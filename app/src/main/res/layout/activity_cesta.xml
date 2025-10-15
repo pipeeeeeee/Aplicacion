@@ -9,7 +9,8 @@
 
 
     <TextView
-        android:id="@+id/tvPrecioTotal"
+
+        android:id="@+id/MontoTotal"
         android:layout_width="157dp"
         android:layout_height="35dp"
         android:layout_marginStart="32dp"
@@ -27,25 +28,24 @@
         android:backgroundTint="@color/blue"
         android:onClick="realizarPago"
         android:text="Pagar"
-        app:layout_constraintStart_toEndOf="@+id/tvPrecioTotal"
-        app:layout_constraintTop_toTopOf="@+id/tvPrecioTotal" />
+        app:layout_constraintStart_toEndOf="@+id/MontoTotal"
+        app:layout_constraintTop_toTopOf="@+id/MontoTotal" />
 
     <TextView
-        android:id="@+id/tvVJenVenta"
+        android:id="@+id/CESTAVJenVenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="48dp"
         android:text="Cesta de la compra "
         android:textColor="#020202"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvTituloZelda"
+        android:id="@+id/CestasTituloZelda"
         android:layout_width="222dp"
         android:layout_height="43dp"
         android:layout_marginEnd="16dp"
@@ -57,7 +57,8 @@
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/tvTituloMarioBros"
+
+        android:id="@+id/CestaTituloMariotext"
         android:layout_width="210dp"
         android:layout_height="47dp"
         android:layout_marginEnd="32dp"
@@ -69,7 +70,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <TextView
-        android:id="@+id/tvTituloCOD"
+        android:id="@+id/CODtextocesta"
         android:layout_width="210dp"
         android:layout_height="47dp"
         android:layout_marginEnd="32dp"
@@ -79,34 +80,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
-
-    <TextView
-        android:id="@+id/tvPrecioMario"
-        android:layout_width="146dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="4dp"
-        android:text="Precio 49,99 €"
-        app:layout_constraintStart_toStartOf="@+id/tvTituloMarioBros"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloMarioBros" />
-
-    <TextView
-        android:id="@+id/tvDesCOD"
-        android:layout_width="106dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="4dp"
-        android:text="Precio 59,99 €"
-        app:layout_constraintStart_toStartOf="@+id/tvTituloCOD"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloCOD" />
-
-    <Button
-        android:id="@+id/btnComprarZelda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="@color/red"
-        android:text="Eliminar "
-        app:layout_constraintStart_toStartOf="@+id/tvDesZelda"
-        app:layout_constraintTop_toBottomOf="@+id/tvDesZelda" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -133,39 +106,67 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvVJenVenta"
+        app:layout_constraintTop_toBottomOf="@+id/CESTAVJenVenta"
         app:srcCompat="@drawable/vjuego1" />
 
     <Button
-        android:id="@+id/btnComprarCOD"
+        android:id="@+id/idCestaZeldaButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@color/red"
         android:text="Eliminar "
-        app:layout_constraintStart_toStartOf="@+id/tvPrecioMario"
-        app:layout_constraintTop_toBottomOf="@+id/tvPrecioMario" />
-
-    <TextView
-        android:id="@+id/tvDesZelda"
-        android:layout_width="127dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="4dp"
-        android:text="Precio 69,99 €"
-        app:layout_constraintStart_toStartOf="@+id/tvTituloZelda"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloZelda" />
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/btnComprarCOD"
+        android:id="@+id/BotonCODcestaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/red"
+        android:text="Eliminar"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/MarioMarioCestaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/red"
+        android:text="Eliminar"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:backgroundTint="@color/red"
-        android:text="Eliminar "
-        app:layout_constraintStart_toStartOf="@+id/tvDesCOD"
-        app:layout_constraintTop_toBottomOf="@+id/tvDesCOD" />
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/CestasTituloZelda"
+        app:layout_constraintTop_toBottomOf="@+id/CestasTituloZelda" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/CODtextocesta"
+        app:layout_constraintTop_toBottomOf="@+id/CODtextocesta" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/CestaTituloMariotext"
+        app:layout_constraintTop_toBottomOf="@+id/CestaTituloMariotext" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
